@@ -1,9 +1,9 @@
-import * as types from './imports/client/constants/actionTypes'
+import * as types from '../constants/actionTypes'
 
-const { EASY, NORMAL, HARD} = types.gameStats;
+const { EASY, NORMAL, HARD } = types.gameStats;
 
 const defaultStat = {
-  level: EASY.label,
+  level:EASY.label,
   mineNum: 10,
   rowNum: 9,
   colNum: 9
@@ -15,7 +15,6 @@ const normalStat = {
   rowNum: 16,
   colNum: 16
 };
-
 
 const hardStat = {
   level: HARD.label,

@@ -14,7 +14,7 @@ export function setNormal() {
   });
 }
 
-export function setHARD() {
+export function setHard() {
   return Store.dispatch({
     type: gameStats.HARD.value
   });

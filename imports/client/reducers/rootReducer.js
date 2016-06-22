@@ -1,16 +1,17 @@
 import { combineReducers } from 'redux';
-import gameStatus from './gameStatus.js';
-import gameStats from './gameStatus.js';
-import gameTime from './gameTime.js';
-import flagNumbers from './flagNumbers.js';
-import openTiles from './openTiles.js';
+import gameStatus from './gameStatus';
+import gameStatistics from './gameStats';
+import gameTime from './gameTime';
+import flagNumbers from './flagNumbers';
+import openTiles from './openTiles';
+import incrementReducer from './incrementReducer';
 
 const rootReducer = combineReducers({
   gameStatus,
   openTiles: incrementReducer("OPEN_TILES"),
   gameTime: incrementReducer("TIME"),
   flagNumbers,
-  gameStats
+  gameStatistics
 });
 
 export default rootReducer;
