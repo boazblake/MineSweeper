@@ -1,5 +1,5 @@
 import React from 'react';
-import Cell from './Cell';
+import Cell from '/imports/client/components/Cell';
 
 export default class Row extends React.Component {
   constructor(props) {

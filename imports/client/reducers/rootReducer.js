@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
 import gameStatus from './gameStatus';
 import gameStatistics from './gameStats';
-import gameTime from './gameTime';
 import flagNumbers from './flagNumbers';
-import openTiles from './openTiles';
 import incrementReducer from './incrementReducer';
 
 const rootReducer = combineReducers({

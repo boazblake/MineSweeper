@@ -20,6 +20,7 @@ import Table from './Table';
 class MineSweeper extends React.Component {
   constructor() {
     super();
+
     this.tick = this.tick.bind(this);
     this.setDifficulty = this.setDifficulty.bind(this);
     this.reset = this.reset.bind(this);
@@ -36,7 +37,7 @@ class MineSweeper extends React.Component {
   }
 
   componentWillMount() {
-    this.intervals = [];
+    this.interval = [];
   }
 
   tick() {
@@ -54,14 +55,15 @@ class MineSweeper extends React.Component {
   }
 
   setGameOver() {
+    alert('game over')
     return gameOver();
   }
 
   setMine() {
     const { gameStatistics } = this.props;
     const mineTable = this.state.mineTable;
-    const mineRange = _.range(gameStatistics.mineNum);
-    _.each(mineRange, () => {
+    const mineRange = __.range(gameStatistics.mineNum);
+    __.each(mineRange, () => {
       const cell = mineTable[Math.floor(Math.random() * 10)][Math.floor(Math.random() * 10)];
       if (cell.hasMine) {
         return;
@@ -132,7 +134,7 @@ class MineSweeper extends React.Component {
             <span className={"button " + gameStatus}></span>
           </span>
           <span className="MineSweeper__time"> {gameTime}</span>
-          <Table openNum={openTiles}
+          <Table  openNum={openTiles}
                   mineNum={gameStatistics.mineNum}
                   rowNum={gameStatistics.rowNum}
                   colNum={gameStatistics.colNum}

@@ -29,7 +29,7 @@ export default function gameStatistics(state, action) {
       return defaultStat;
     case NORMAL.value:
       return normalStat;
-    case EASY.value:
+    case HARD.value:
       return hardStat;
       default:
         return defaultStat;
