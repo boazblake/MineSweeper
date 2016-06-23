@@ -50,7 +50,7 @@ class MineSweeper extends React.Component {
     return judge(gameStatistics, openTiles);
   }
 
-  checkFlagNumber() {
+  checkFlagNumber(num) {
     return checkFlag(num);
   }
 

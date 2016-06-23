@@ -122,13 +122,13 @@ embed {
     position: absolute;
     right: 10px;
     top: 10px;
-    background: url("../images/icn_flag_01.png") no-repeat left center;
+    background: url("client/images/icn_flag_01.png") no-repeat left center;
     padding-left: 25px; }
 .MineSweeper__time {
     position: absolute;
     left: 10px;
     top: 10px;
-    background: url("../images/icn_clock_01.png") no-repeat left center;
+    background: url("client/images/icn_clock_01.png") no-repeat left center;
     padding-left: 30px; }
 .MineSweeper__face {
     position: absolute;
@@ -145,11 +145,11 @@ embed {
     height: 100%;
     display: block; }
 .MineSweeper__face .playing {
-    background: url("../images/icn_face_01.png") no-repeat center center, #ccc; }
+    background: url("client/images/icn_face_01.png") no-repeat center center, #ccc; }
 .MineSweeper__face .clear {
-    background: url("../images/icn_face_02.png") no-repeat center center, #ccc; }
+    background: url("client/images/icn_face_02.png") no-repeat center center, #ccc; }
 .MineSweeper__face .gameover {
-    background: url("../images/icn_face_03.png") no-repeat center center, #ccc; }
+    background: url("client/images/icn_face_03.png") no-repeat center center, #ccc; }
 
 .Table {
     border: 1px solid #ccc;
@@ -190,13 +190,13 @@ embed {
 .Cell__number8 {
     color: #666; }
 .Cell__flag {
-    background: url("../images/icn_flag_01.png") no-repeat center center;
+    background: url("client/images/icn_flag_01.png") no-repeat center center;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
     height: 100%; }
 .Cell__bomb {
-    background: url("../images/icn_bomb_01.png") no-repeat center center;
+    background: url("client/images/icn_bomb_01.png") no-repeat center center;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
